@@ -1,0 +1,273 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Smart ADV Solutions. LLC | Advertising &amp; Digital Marketing</title>
+  <meta name="description" content="Smart ADV Solutions. LLC is a Delaware limited liability company providing advertising, digital marketing and campaign management services.">
+  <meta name="robots" content="index, follow">
+  <link rel="canonical" href="https://advsolution.space/">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%230b2545'/%3E%3Cpath d='M18 42 L32 18 L46 42' stroke='%23f2a541' stroke-width='6' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+  <style>
+    :root {
+      --navy: #0b2545;
+      --navy-2: #13315c;
+      --accent: #f2a541;
+      --text: #1d2433;
+      --muted: #5b6475;
+      --line: #e3e7ee;
+      --bg-soft: #f5f7fa;
+      --radius: 14px;
+    }
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: "Segoe UI", -apple-system, BlinkMacSystemFont, Roboto, "Helvetica Neue", Arial, sans-serif;
+      color: var(--text);
+      line-height: 1.6;
+      background: #fff;
+    }
+    a { color: var(--navy-2); }
+    .container { width: min(1100px, 92%); margin: 0 auto; }
+
+    /* Header */
+    header {
+      position: sticky; top: 0; z-index: 10;
+      background: rgba(255,255,255,0.96);
+      border-bottom: 1px solid var(--line);
+      backdrop-filter: blur(6px);
+    }
+    .nav { display: flex; align-items: center; justify-content: space-between; height: 68px; }
+    .brand { display: flex; align-items: center; gap: 10px; text-decoration: none; color: var(--navy); font-weight: 700; font-size: 1.1rem; }
+    .brand svg { width: 36px; height: 36px; }
+    .nav ul { display: flex; gap: 26px; list-style: none; }
+    .nav ul a { text-decoration: none; color: var(--muted); font-weight: 500; font-size: 0.95rem; }
+    .nav ul a:hover { color: var(--navy); }
+
+    /* Hero */
+    .hero {
+      background: linear-gradient(135deg, var(--navy) 0%, var(--navy-2) 100%);
+      color: #fff;
+      padding: 96px 0 88px;
+    }
+    .hero .tag {
+      display: inline-block; font-size: 0.8rem; letter-spacing: 0.08em; text-transform: uppercase;
+      border: 1px solid rgba(255,255,255,0.3); padding: 6px 14px; border-radius: 999px; margin-bottom: 22px;
+    }
+    .hero h1 { font-size: clamp(2rem, 4.5vw, 3.2rem); line-height: 1.15; max-width: 760px; }
+    .hero h1 span { color: var(--accent); }
+    .hero p { margin-top: 18px; max-width: 640px; color: rgba(255,255,255,0.85); font-size: 1.1rem; }
+    .btns { margin-top: 32px; display: flex; gap: 14px; flex-wrap: wrap; }
+    .btn {
+      display: inline-block; padding: 13px 26px; border-radius: 10px; font-weight: 600; text-decoration: none;
+      transition: transform .15s ease;
+    }
+    .btn:hover { transform: translateY(-2px); }
+    .btn-primary { background: var(--accent); color: var(--navy); }
+    .btn-ghost { border: 1px solid rgba(255,255,255,0.45); color: #fff; }
+
+    /* Sections */
+    section { padding: 80px 0; }
+    section.soft { background: var(--bg-soft); }
+    .eyebrow { color: var(--accent); font-weight: 700; font-size: 0.8rem; letter-spacing: 0.1em; text-transform: uppercase; }
+    h2 { font-size: clamp(1.6rem, 3vw, 2.2rem); color: var(--navy); margin: 6px 0 14px; }
+    .lead { color: var(--muted); max-width: 720px; font-size: 1.05rem; }
+
+    .grid { display: grid; gap: 22px; margin-top: 40px; }
+    .grid-3 { grid-template-columns: repeat(auto-fit, minmax(260px, 1fr)); }
+    .grid-2 { grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); }
+
+    .card {
+      background: #fff; border: 1px solid var(--line); border-radius: var(--radius); padding: 28px;
+    }
+    .card .icon {
+      width: 46px; height: 46px; border-radius: 12px; display: grid; place-items: center;
+      background: rgba(242,165,65,0.15); color: var(--navy); margin-bottom: 16px;
+    }
+    .card .icon svg { width: 24px; height: 24px; }
+    .card h3 { color: var(--navy); font-size: 1.12rem; margin-bottom: 8px; }
+    .card p { color: var(--muted); font-size: 0.97rem; }
+
+    /* Company facts */
+    .info {
+      display: grid; grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 18px 32px; margin-top: 20px; font-size: 0.92rem;
+    }
+    .info dt { color: var(--muted); font-size: 0.75rem; text-transform: uppercase; letter-spacing: 0.06em; }
+    .info dd { color: var(--text); font-weight: 500; }
+
+    address { font-style: normal; color: var(--text); }
+    .contact-row { display: flex; flex-wrap: wrap; gap: 8px 40px; margin-top: 16px; }
+    .contact-line { display: flex; gap: 12px; align-items: flex-start; margin-top: 12px; }
+    .contact-line svg { width: 20px; height: 20px; flex-shrink: 0; margin-top: 3px; color: var(--accent); }
+
+    /* Footer */
+    footer { background: var(--navy); color: rgba(255,255,255,0.75); padding: 40px 0; font-size: 0.9rem; }
+    footer .row { display: flex; justify-content: space-between; flex-wrap: wrap; gap: 14px; }
+    footer a { color: #fff; }
+    .legal { margin-top: 18px; font-size: 0.82rem; color: rgba(255,255,255,0.55); }
+
+    @media (max-width: 720px) {
+      .nav ul { display: none; }
+    }
+    @media print {
+      header, .btns { display: none; }
+      .hero { background: none; color: var(--text); padding: 20px 0; }
+      .hero p { color: var(--muted); }
+      section { padding: 24px 0; }
+    }
+  </style>
+</head>
+<body>
+
+  <header>
+    <div class="container nav">
+      <a class="brand" href="#top" aria-label="Smart ADV Solutions home">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><rect width="64" height="64" rx="14" fill="#0b2545"/><path d="M18 42 L32 18 L46 42" stroke="#f2a541" stroke-width="6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+        Smart ADV Solutions
+      </a>
+      <nav aria-label="Main">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#services">Services</a></li>
+          <li><a href="#company">Company Information</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <!-- Hero -->
+    <div class="hero">
+      <div class="container">
+        <span class="tag">Smart ADV Solutions</span>
+        <h1>Advertising that turns attention into <span>measurable growth</span>.</h1>
+        <p>Smart ADV Solutions. LLC plans, creates and manages advertising campaigns for businesses across digital and traditional channels &mdash; from strategy and creative production to media buying and performance reporting.</p>
+        <div class="btns">
+          <a class="btn btn-primary" href="#contact">Contact us</a>
+          <a class="btn btn-ghost" href="#company">Company information</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- About -->
+    <section id="about">
+      <div class="container">
+        <div class="eyebrow">About us</div>
+        <h2>Who we are</h2>
+        <p class="lead">
+          Smart ADV Solutions. LLC is an advertising services company organized under the laws of the State of Delaware, USA, on July 10, 2023. We help brands, online stores and local businesses reach the right audience through targeted advertising, compelling creative and data-driven campaign management.
+        </p>
+        <div class="grid grid-3">
+          <div class="card">
+            <h3>Our mission</h3>
+            <p>To give businesses of every size access to professional, results-focused advertising with transparent reporting and clear pricing.</p>
+          </div>
+          <div class="card">
+            <h3>How we work</h3>
+            <p>Every engagement starts with goals and budget. We then build the strategy, produce the creative, launch the campaigns and optimize them continuously.</p>
+          </div>
+          <div class="card">
+            <h3>Who we serve</h3>
+            <p>E-commerce brands, retailers, service providers and startups in the United States and Europe looking to grow their customer base.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Services -->
+    <section id="services" class="soft">
+      <div class="container">
+        <div class="eyebrow">Services</div>
+        <h2>What we do</h2>
+        <p class="lead">End-to-end advertising services, delivered as individual projects or ongoing monthly management.</p>
+        <div class="grid grid-3">
+          <div class="card">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 11l18-5v12L3 14v-3z"/><path d="M11.6 16.8a3 3 0 1 1-5.8-1.6"/></svg></div>
+            <h3>Digital Advertising</h3>
+            <p>Paid campaigns on Google, Meta (Facebook &amp; Instagram), TikTok and other platforms, with audience targeting and budget management.</p>
+          </div>
+          <div class="card">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="18" cy="5" r="3"/><circle cx="6" cy="12" r="3"/><circle cx="18" cy="19" r="3"/><path d="M8.6 13.5l6.8 4M15.4 6.5l-6.8 4"/></svg></div>
+            <h3>Social Media Marketing</h3>
+            <p>Content planning, account management and community growth to build brand awareness and engagement.</p>
+          </div>
+          <div class="card">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19l7-7 3 3-7 7-3-3z"/><path d="M18 13l-1.5-7.5L2 2l3.5 14.5L13 18l5-5z"/><path d="M2 2l7.6 7.6"/><circle cx="11" cy="11" r="2"/></svg></div>
+            <h3>Creative Production</h3>
+            <p>Ad copy, graphic design, banners and short-form video created to perform on each channel.</p>
+          </div>
+          <div class="card">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="3" width="20" height="14" rx="2"/><path d="M8 21h8M12 17v4"/></svg></div>
+            <h3>Media Planning &amp; Buying</h3>
+            <p>Selecting and purchasing advertising placements across online and offline media to maximize reach per dollar spent.</p>
+          </div>
+          <div class="card">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="M7 15l4-4 3 3 5-6"/></svg></div>
+            <h3>Analytics &amp; Reporting</h3>
+            <p>Conversion tracking, performance dashboards and regular reports so clients see exactly what their budget achieves.</p>
+          </div>
+          <div class="card">
+            <div class="icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+            <h3>Marketing Strategy</h3>
+            <p>Market research, brand positioning and campaign planning tailored to each client&rsquo;s goals and budget.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Company information -->
+    <section id="company">
+      <div class="container">
+        <div class="eyebrow">Corporate details</div>
+        <h2>Company information</h2>
+
+        <dl class="info">
+          <div><dt>Legal name</dt><dd>Smart ADV Solutions. LLC</dd></div>
+          <div><dt>Entity</dt><dd>Delaware LLC</dd></div>
+          <div><dt>File number</dt><dd>7557514</dd></div>
+          <div><dt>Formed</dt><dd>July 10, 2023</dd></div>
+          <div><dt>Legal address</dt><dd>16192 Coastal Highway, Lewes, DE 19958, USA</dd></div>
+          <div><dt>Email</dt><dd><a href="mailto:contact@advsolution.space">contact@advsolution.space</a></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="soft">
+      <div class="container">
+        <div class="eyebrow">Contact</div>
+        <h2>Get in touch</h2>
+        <p class="lead">For project inquiries, partnerships or administrative matters, please contact us by email. We usually reply within one business day.</p>
+
+        <div class="contact-row">
+          <div class="contact-line">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M22 6l-10 7L2 6"/></svg>
+            <a href="mailto:contact@advsolution.space">contact@advsolution.space</a>
+          </div>
+          <div class="contact-line">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13S3 17 3 10a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <address>16192 Coastal Highway, Lewes, DE 19958, USA</address>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="container">
+      <div class="row">
+        <div><strong style="color:#fff">Smart ADV Solutions. LLC</strong> &middot; Advertising &amp; Digital Marketing</div>
+        <div><a href="mailto:contact@advsolution.space">contact@advsolution.space</a></div>
+      </div>
+      <p class="legal">
+        Smart ADV Solutions. LLC &middot; Delaware LLC &middot; File No. 7557514 &middot; 16192 Coastal Highway, Lewes, DE 19958, USA.
+        Privacy: this website does not use cookies, analytics or third-party trackers. Information you send us by email or phone is used only to answer your request.
+        <br>&copy; 2026 Smart ADV Solutions. LLC. All rights reserved.
+      </p>
+    </div>
+  </footer>
+
+</body>
+</html>
